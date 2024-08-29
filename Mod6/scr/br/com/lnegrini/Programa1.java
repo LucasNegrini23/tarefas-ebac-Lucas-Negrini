@@ -1,5 +1,5 @@
 /**
- * @author rodrigo.pires professor Ebac (exemplo programação estruturada)
+ * @author rodrigo.pires professor Ebac (exemplo programação procedural)
  */
 
 public class Programa1 {
