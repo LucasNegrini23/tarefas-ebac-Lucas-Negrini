@@ -1,0 +1,25 @@
+Tarefa Injeção de Dependências no Spring
+
+A Injeção de Dependências é um padrão de design no Spring Framework
+que permite criar aplicações desacopladas e fáceis de manter.
+A Inversão de Controle (IoC) delega ao Spring a criação e o
+gerenciamento de objetos que são chamados de beans.
+O Spring injeta as dependências automaticamente usando a anotação @Autowired que
+pode ser usada em construtores, métodos setter ou diretamente nos campos das classes.
+A injeção via construtor é a mais recomendada pois garante que todas as dependências obrigatórias
+estejam presentes quando o objeto é criado. A injeção via setter permite maior flexibilidade
+ao definir dependências após a criação do objeto. A injeção via campo é mais simples
+mas menos recomendada para testes e manutenção. Os principais benefícios da
+DI são o desacoplamento das classes a facilidade de troca de dependências sem modificar
+o código principal a facilidade de testes já que os objetos podem ser testados isoladamente
+e uma maior facilidade de manutenção tornando o código mais organizado e modular.
+Em resumo a Injeção de Dependências no Spring torna o desenvolvimento mais eficiente flexível
+e escalável automatizando a gestão de dependências.
+
+Lucas Moreira Negrini
+
+Referencias
+Spring Framework Documentation (https://docs.spring.io/spring-framework/reference/core/beans.html)
+Baeldung (https://www.baeldung.com/spring-dependency-injection)
+https://spring.io/blog
+https://www.linkedin.com/pulse/vamos-conversar-sobre-inje%C3%A7%C3%A3o-de-dependencia-alex-i4l2f/
