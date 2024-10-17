@@ -1,4 +1,4 @@
-package br.com.lnegrini.annotation;
+package br.com.lnegrini.reflection;
 
 import java.lang.annotation.*;
 
@@ -10,4 +10,5 @@ public @interface TabelaAnnotation {
     String nome();
     String idade();
     String sexo();
+
 }
