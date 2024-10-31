@@ -146,7 +146,7 @@ public class ClienteDAO implements IClienteDAO {
             if (connection != null && !connection.isClosed()) {
                 connection.close();
             }
-           return clientes;
+            return clientes;
         }
     }
 }
