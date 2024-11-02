@@ -39,13 +39,14 @@ public class ClienteDAOTest {
     @Test
     public void pesquisarCliente() throws MaisDeUmRegistroException, TabelaException, TipoChaveNaoEncontradaException, DAOException {
         Cliente cliente = new Cliente();
-        cliente.setCpf(12312312312L);
-        cliente.setNome("Rodrigo");
+        cliente.setCpf(12312312344L);
+        cliente.setNome("Lucas");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");
         cliente.setNumero(10);
         cliente.setTel(1199999999L);
+        cliente.setEstadoCivil("Casado");
         clienteDao.cadastrar(cliente);
 
         Cliente clienteConsultado = clienteDao.consultar(cliente.getCpf());
@@ -57,13 +58,14 @@ public class ClienteDAOTest {
     @Test
     public void salvarCliente() throws TipoChaveNaoEncontradaException, MaisDeUmRegistroException, TabelaException, DAOException {
         Cliente cliente = new Cliente();
-        cliente.setCpf(56565656565L);
-        cliente.setNome("Rodrigo");
+        cliente.setCpf(56565650065L);
+        cliente.setNome("Lucas");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");
         cliente.setNumero(10);
         cliente.setTel(1199999999L);
+        cliente.setEstadoCivil("Casado");
         Boolean retorno = clienteDao.cadastrar(cliente);
         assertTrue(retorno);
 
@@ -78,12 +80,13 @@ public class ClienteDAOTest {
     public void excluirCliente() throws TipoChaveNaoEncontradaException, MaisDeUmRegistroException, TabelaException, DAOException {
         Cliente cliente = new Cliente();
         cliente.setCpf(56565656565L);
-        cliente.setNome("Rodrigo");
+        cliente.setNome("Lucas");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");
         cliente.setNumero(10);
         cliente.setTel(1199999999L);
+        cliente.setEstadoCivil("Casado");
         Boolean retorno = clienteDao.cadastrar(cliente);
         assertTrue(retorno);
 
@@ -98,25 +101,26 @@ public class ClienteDAOTest {
     @Test
     public void alterarCliente() throws TipoChaveNaoEncontradaException, MaisDeUmRegistroException, TabelaException, DAOException {
         Cliente cliente = new Cliente();
-        cliente.setCpf(56565656565L);
-        cliente.setNome("Rodrigo");
+        cliente.setCpf(565651246565L);
+        cliente.setNome("Lucas");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");
         cliente.setNumero(10);
         cliente.setTel(1199999999L);
+        cliente.setEstadoCivil("Casado");
         Boolean retorno = clienteDao.cadastrar(cliente);
         assertTrue(retorno);
 
         Cliente clienteConsultado = clienteDao.consultar(cliente.getCpf());
         Assert.assertNotNull(clienteConsultado);
 
-        clienteConsultado.setNome("Rodrigo Pires");
+        clienteConsultado.setNome("Lucas Negrini");
         clienteDao.alterar(clienteConsultado);
 
         Cliente clienteAlterado = clienteDao.consultar(clienteConsultado.getCpf());
         Assert.assertNotNull(clienteAlterado);
-        Assert.assertEquals("Rodrigo Pires", clienteAlterado.getNome());
+        Assert.assertEquals("Lucas Negrini", clienteAlterado.getNome());
 
         clienteDao.excluir(cliente.getCpf());
         clienteConsultado = clienteDao.consultar(cliente.getCpf());
@@ -126,24 +130,26 @@ public class ClienteDAOTest {
     @Test
     public void buscarTodos() throws TipoChaveNaoEncontradaException, DAOException {
         Cliente cliente = new Cliente();
-        cliente.setCpf(56565656565L);
-        cliente.setNome("Rodrigo");
+        cliente.setCpf(56565656500L);
+        cliente.setNome("Lucas");
         cliente.setCidade("São Paulo");
         cliente.setEnd("End");
         cliente.setEstado("SP");
         cliente.setNumero(10);
         cliente.setTel(1199999999L);
+        cliente.setEstadoCivil("Casado");
         Boolean retorno = clienteDao.cadastrar(cliente);
         assertTrue(retorno);
 
         Cliente cliente1 = new Cliente();
         cliente1.setCpf(56565656569L);
-        cliente1.setNome("Rodrigo");
+        cliente1.setNome("Lucas Negrini");
         cliente1.setCidade("São Paulo");
         cliente1.setEnd("End");
         cliente1.setEstado("SP");
         cliente1.setNumero(10);
         cliente1.setTel(1199999999L);
+        cliente.setEstadoCivil("Casado");
         Boolean retorno1 = clienteDao.cadastrar(cliente1);
         assertTrue(retorno1);
 
@@ -163,6 +169,26 @@ public class ClienteDAOTest {
         Collection<Cliente> list1 = clienteDao.buscarTodos();
         assertTrue(list1 != null);
         assertTrue(list1.size() == 0);
+    }
+
+    @Test
+    public void testTarefa()  throws TipoChaveNaoEncontradaException, MaisDeUmRegistroException, TabelaException, DAOException {
+        Cliente cliente = new Cliente();
+        cliente.setCpf(043440L);
+        cliente.setNome("Lucas Moreira");
+        cliente.setCidade("Campo Grande");
+        cliente.setEnd("End");
+        cliente.setEstado("MS");
+        cliente.setNumero(80);
+        cliente.setTel(1194566899L);
+        cliente.setEstadoCivil("Casado");
+        clienteDao.cadastrar(cliente);
+
+        Cliente clienteConsultado = clienteDao.consultar(cliente.getCpf());
+        Assert.assertNotNull(clienteConsultado);
+        Assert.assertFalse(clienteConsultado.getEstadoCivil() == "Solteiro");
+
+        clienteDao.excluir(cliente.getCpf());
     }
 }
 
