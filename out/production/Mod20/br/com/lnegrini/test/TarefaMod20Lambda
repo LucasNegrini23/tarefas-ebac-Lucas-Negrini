@@ -1,0 +1,14 @@
+Tarefa Mod20 Lambda
+
+Funções lambda em Java são uma maneira mais curta de escrever funções sem precisar criar métodos completos
+enquanto as funções tradicionais precisam de uma estrutura mais longa com nome tipo de retorno e parâmetros
+lambdas são usadas quando queremos passar uma função como argumento de outra ou quando usamos interfaces funcionais
+que têm um único método como Runnable ou Comparator a principal diferença é que funções normais exigem mais código e
+são usadas quando precisamos de algo mais complexo lambdas são boas para tarefas rápidas e simples economizando tempo
+e linhas de código.
+
+Referencias:
+
+https://www.treinaweb.com.br/blog/dica-de-codigo-expressoes-lambda-em-java
+https://www.devmedia.com.br/como-usar-funcoes-lambda-em-java/32826
+https://www.w3schools.com/java/java_lambda.asp

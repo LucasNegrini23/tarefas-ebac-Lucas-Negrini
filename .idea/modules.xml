@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Mod24/Contrato/Contrato.iml" filepath="$PROJECT_DIR$/Mod24/Contrato/Contrato.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod10/Mod10.iml" filepath="$PROJECT_DIR$/Mod10/Mod10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod13/Mod13.iml" filepath="$PROJECT_DIR$/Mod13/Mod13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod14/Mod14.iml" filepath="$PROJECT_DIR$/Mod14/Mod14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod15/Mod15.iml" filepath="$PROJECT_DIR$/Mod15/Mod15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod16/Mod16.iml" filepath="$PROJECT_DIR$/Mod16/Mod16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod17/Mod17.iml" filepath="$PROJECT_DIR$/Mod17/Mod17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod18/Mod18.iml" filepath="$PROJECT_DIR$/Mod18/Mod18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod19/Mod19.iml" filepath="$PROJECT_DIR$/Mod19/Mod19.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod20/Mod20.iml" filepath="$PROJECT_DIR$/Mod20/Mod20.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod22/Mod22.iml" filepath="$PROJECT_DIR$/Mod22/Mod22.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod23/Mod23.iml" filepath="$PROJECT_DIR$/Mod23/Mod23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod24/Mod24.iml" filepath="$PROJECT_DIR$/Mod24/Mod24.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod25/Mod25.iml" filepath="$PROJECT_DIR$/Mod25/Mod25.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod29/Mod29.iml" filepath="$PROJECT_DIR$/Mod29/Mod29.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod30/Mod30.iml" filepath="$PROJECT_DIR$/Mod30/Mod30.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod32/Mod32.iml" filepath="$PROJECT_DIR$/Mod32/Mod32.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod33/Mod33.iml" filepath="$PROJECT_DIR$/Mod33/Mod33.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod7/Mod7.iml" filepath="$PROJECT_DIR$/Mod7/Mod7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod8/Mod8.iml" filepath="$PROJECT_DIR$/Mod8/Mod8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod9/Mod9.iml" filepath="$PROJECT_DIR$/Mod9/Mod9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod24/Test/Test.iml" filepath="$PROJECT_DIR$/Mod24/Test/Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tarefas-ebac-Lucas-Negrini.iml" filepath="$PROJECT_DIR$/tarefas-ebac-Lucas-Negrini.iml" />
+    </modules>
+  </component>
+</project>
