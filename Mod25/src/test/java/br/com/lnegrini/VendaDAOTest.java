@@ -19,7 +19,7 @@ public class VendaDAOTest {
 
     private IClienteDAO clienteDao;
 
-    private IProdutoDAO produtoDao;
+    private IProdutoDA produtoDao;
 
     //private Venda venda;
 

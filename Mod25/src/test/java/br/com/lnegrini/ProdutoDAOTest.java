@@ -1,6 +1,6 @@
 package test.java.br.com.lnegrini;
 
-import main.java.lnegrini.dao.IProdutoDAO;
+import main.java.lnegrini.dao.IProdutoDA;
 import main.java.lnegrini.dao.ProdutoDAO;
 import main.java.lnegrini.domain.Produto;
 import main.java.lnegrini.exceptions.TipoChaveNaoEncontradaException;
@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 
 public class ProdutoDAOTest {
 
-    private IProdutoDAO produtoDao;
+    private IProdutoDA produtoDao;
 
     private Produto produto;
 

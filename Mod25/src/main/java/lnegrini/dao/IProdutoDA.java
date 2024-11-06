@@ -6,7 +6,7 @@ import main.java.lnegrini.exceptions.TipoChaveNaoEncontradaException;
 
 import java.util.Collection;
 
-public interface IProdutoDAO extends IGenericDAO<Produto, String> {
+public interface IProdutoDA extends IGenericDAO<Produto, String> {
 
     Boolean cadastrar(Produto entity) throws TipoChaveNaoEncontradaException;
 

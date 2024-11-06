@@ -1,6 +1,6 @@
 package test.java.br.com.lnegrini;
 
-import main.java.lnegrini.dao.IProdutoDAO;
+import main.java.lnegrini.dao.IProdutoDA;
 import main.java.lnegrini.domain.Produto;
 import main.java.lnegrini.exceptions.TipoChaveNaoEncontradaException;
 import main.java.lnegrini.services.IProdutoService;
@@ -19,7 +19,7 @@ public class ProdutoServiceTest {
     private Produto produto;
 
     public ProdutoServiceTest() {
-        IProdutoDAO dao = new ProdutoDaoMock();
+        IProdutoDA dao = new ProdutoDaoMock();
         produtoService = new ProdutoService(dao);
     }
 

@@ -5,7 +5,7 @@ import main.java.lnegrini.domain.Produto;
 import main.java.lnegrini.domain.Venda;
 import main.java.lnegrini.exceptions.TipoChaveNaoEncontradaException;
 
-public class ProdutoDAO extends GenericDAO<Produto, String> implements IProdutoDAO {
+public class ProdutoDAO extends GenericDAO<Produto, String> implements IProdutoDA {
 
     public ProdutoDAO() {
         super();

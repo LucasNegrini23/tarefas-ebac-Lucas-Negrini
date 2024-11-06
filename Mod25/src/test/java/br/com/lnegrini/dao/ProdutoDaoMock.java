@@ -1,12 +1,12 @@
 package test.java.br.com.lnegrini.dao;
 
-import main.java.lnegrini.dao.IProdutoDAO;
+import main.java.lnegrini.dao.IProdutoDA;
 import main.java.lnegrini.domain.Produto;
 import main.java.lnegrini.exceptions.TipoChaveNaoEncontradaException;
 
 import java.util.Collection;
 
-public class ProdutoDaoMock implements IProdutoDAO {
+public class ProdutoDaoMock implements IProdutoDA {
 
     @Override
     public Boolean cadastrar(Produto entity) throws TipoChaveNaoEncontradaException {
