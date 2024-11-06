@@ -60,14 +60,14 @@ public class Tarefa_Collections {
 
     private static void TarefaListaSeparadaPorSexo() {
         System.out.println("****** TarefaListaSeparadaPorSexo ******");
-        List<Familiares> listaFamiliares = new ArrayList<>();
-        listaFamiliares.add(new Familiares("Lucas Negrini", 'M'));
-        listaFamiliares.add(new Familiares("Larissa Prieto", 'F'));
-        listaFamiliares.add(new Familiares("Valentinna Prieto", 'F'));
-        listaFamiliares.add(new Familiares("Maria Moreira", 'F'));
-        listaFamiliares.add(new Familiares("Edgar Maidana", 'M'));
-        listaFamiliares.add(new Familiares("Mateus Negrini", 'M'));
-        listaFamiliares.add(new Familiares("Suelen Moreira", 'F'));
+        List<Familiares2> listaFamiliares = new ArrayList<>();
+        listaFamiliares.add(new Familiares2("Lucas Negrini", 'M'));
+        listaFamiliares.add(new Familiares2("Larissa Prieto", 'F'));
+        listaFamiliares.add(new Familiares2("Valentinna Prieto", 'F'));
+        listaFamiliares.add(new Familiares2("Maria Moreira", 'F'));
+        listaFamiliares.add(new Familiares2("Edgar Maidana", 'M'));
+        listaFamiliares.add(new Familiares2("Mateus Negrini", 'M'));
+        listaFamiliares.add(new Familiares2("Suelen Moreira", 'F'));
 
        
         Collections.sort(listaFamiliares, (f1, f2) -> f1.nome.compareTo(f2.nome));
@@ -76,7 +76,7 @@ public class Tarefa_Collections {
         System.out.println("");
 
         System.out.println("Familiares do sexo Masculino:");
-        for (Familiares f : listaFamiliares) {
+        for (Familiares2 f : listaFamiliares) {
             if (f.sexo == 'M') {
                 System.out.println(f);
             }
@@ -85,7 +85,7 @@ public class Tarefa_Collections {
         System.out.println(); //Break
 
         System.out.println("Familiares do sexo Feminino:");
-        for (Familiares f : listaFamiliares) {
+        for (Familiares2 f : listaFamiliares) {
             if (f.sexo == 'F') {
                 System.out.println(f);
             }
