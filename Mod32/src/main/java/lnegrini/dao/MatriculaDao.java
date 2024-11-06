@@ -32,6 +32,7 @@ public class MatriculaDao implements IMatriculaDao{
         return matricula;
     }
 
+    //EXEMPLO CRITERIA
     @Override
     public List<Matricula> buscarTodos() {
         EntityManagerFactory entityManagerFactory =
@@ -68,6 +69,8 @@ public class MatriculaDao implements IMatriculaDao{
         entityManagerFactory.close();
     }
 
+
+    //Exemplo JPQL
     @Override
     public Matricula buscarPorCurso(Curso curso) {
         EntityManagerFactory entityManagerFactory =
