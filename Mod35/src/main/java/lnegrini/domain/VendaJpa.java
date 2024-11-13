@@ -1,8 +1,5 @@
 package main.java.lnegrini.domain;
 
-import main.java.lnegrini.annotation.ColunaTabela;
-import main.java.lnegrini.annotation.Tabela;
-import main.java.lnegrini.annotation.TipoChave;
 import main.java.lnegrini.dao.Persistente;
 import javax.persistence.Table;
 import main.java.lnegrini.domain.ProdutoQuantidadeJpa;

@@ -42,8 +42,8 @@ public class VendaJpaDAO extends GenericJpaDao<VendaJpa, Long> implements IVenda
                 ProdutoJpa prodJpa = entityManager.merge(prod.getProduto());
                 prod.setProduto(prodJpa);
             });
-            ClienteJpa clienteJpa = entityManager.merge(entity.getCliente());
-            entity.setCliente(clienteJpa);
+            ClienteJpa cliente = entityManager.merge(entity.getCliente());
+            entity.setCliente(cliente);
             entityManager.persist(entity);
             entityManager.getTransaction().commit();
             closeConnection();

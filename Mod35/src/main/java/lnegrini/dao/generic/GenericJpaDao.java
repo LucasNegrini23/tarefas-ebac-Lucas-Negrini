@@ -24,7 +24,7 @@ public class GenericJpaDao <T extends Persistente, E extends Serializable> imple
 
     public GenericJpaDao(Class<T> persistenteClass) {
         this.persistenteClass = persistenteClass;
-    }
+            }
 
     @Override
     public T cadastrar(T entity) throws TipoChaveNaoEncontradaException, DAOException {
@@ -73,7 +73,7 @@ public class GenericJpaDao <T extends Persistente, E extends Serializable> imple
 
     protected void openConnection() {
         entityManagerFactory =
-                Persistence.createEntityManagerFactory("ProjetoJPA");
+                Persistence.createEntityManagerFactory("ExemploJPA");
         entityManager = entityManagerFactory.createEntityManager();
         entityManager.getTransaction().begin();
     }

@@ -1,7 +1,5 @@
 package main.java.lnegrini.domain;
 
-import main.java.lnegrini.annotation.ColunaTabela;
-import main.java.lnegrini.annotation.Tabela;
 import javax.persistence.Table;
 import main.java.lnegrini.domain.ProdutoJpa;
 import main.java.lnegrini.domain.VendaJpa;
